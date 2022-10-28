@@ -18,9 +18,8 @@ def Random_Matrix(rows : int, columns: int) ->  pd.DataFrame:
     # Generate an array of random float numbers: [0.123, -0.345,...]
     random_values = np.random.random(rows * columns ).reshape(rows, columns)
 
-    # Transform floats to the positive integers
+    # Array of floats: transform each number to the positive integer
     random_pos_values = abs(random_values * 1000)
-
 
     # Rows: generate the list of the names like: ['rw_1', 'rw_2' ..
     rows_list = list(map(lambda x: f"rw_{x}", np.arange(1,rows + 1)))
