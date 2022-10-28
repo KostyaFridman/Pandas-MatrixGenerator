@@ -2,7 +2,7 @@
 import numpy as np
 import pandas as pd
 
-# Pandas: Generate matrix [21x43] of random integers - use "Reshape()"
+# Pandas: Generate matrix [4x6] of random integers
 
 matrix_rows = 4
 matrix_columns = 6
